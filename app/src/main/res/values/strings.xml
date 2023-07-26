@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CurrencyApp-BanqMasr</string>
+
+    <string name="error_unknown">Unknown error</string>
+    <string name="error_connection_timeout">An error occurred during connection .. Please try again later</string>
+    <string name="error_check_your_internet_connection">Please check your internet connection</string>
 </resources>
