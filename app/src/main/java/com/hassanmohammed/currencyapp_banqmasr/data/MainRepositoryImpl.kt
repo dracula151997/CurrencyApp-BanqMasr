@@ -11,13 +11,11 @@ class MainRepositoryImpl(
         date: String,
         base: String,
         symbol: String
-    ) = safeApiCall {
-        apiService.getHistoricalRates(date = date, base = base, symbols = symbol)
-            .toHistoricalRate()
-    }
+    ) = apiService.getHistoricalRates(date = date, base = base, symbols = symbol)
 
-    override suspend fun convert(from: String, to: String, amount: String) =
-        safeApiCall {
-            apiService.convert(from = from, to = to, amount = amount).toCurrencyConverter()
-        }
+    override suspend fun convert(from: String, to: String, amount: String)= apiService.convert(
+        from,
+        to,
+        amount
+    )
 }

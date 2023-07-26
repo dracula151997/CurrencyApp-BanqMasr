@@ -1,6 +1,7 @@
 package com.hassanmohammed.currencyapp_banqmasr.domain
 
 import com.hassanmohammed.currencyapp_banqmasr.core.utils.ApiResult
+import com.hassanmohammed.currencyapp_banqmasr.data.remote.CurrencyService
 import com.hassanmohammed.currencyapp_banqmasr.data.remote.requests.currencyconverter.CurrencyConverterDto
 import com.hassanmohammed.currencyapp_banqmasr.data.remote.requests.historical.HistoricalRateDto
 import com.hassanmohammed.currencyapp_banqmasr.domain.models.CurrencyConverter
@@ -12,7 +13,7 @@ interface MainRepository {
         date: String,
         base: String,
         symbol: String
-    ) : Flow<ApiResult<HistoricalRate>>
+    ) : HistoricalRateDto
 
-    suspend fun convert(from: String, to: String, amount:String) : Flow<ApiResult<CurrencyConverter>>
+    suspend fun convert(from: String, to: String, amount:String) : CurrencyConverterDto
 }
