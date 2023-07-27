@@ -1,21 +1,17 @@
 # Currency App
 ### Banq Misr Task
 
-Currency App is designed to helps customers to hand different currency conversions
+The currency App is designed to help customers to hand different currency conversions
 
 - Able to convert currencies from different bases.
-- Display the historical data for the user FROM/TO selections in last 3 days(day by day).
+- Display the historical data for the user FROM/TO selections in the last 3 days(day by day).
 - Display the conversion from the base currency to 10 different popular currencies.
-
-
-### Screencast for App
-https://drive.google.com/file/d/1B9h5ftUhssyNbG7pGSvcHLdhc0IlhNch/view?usp=sharing
 
 
 ## I used:
 - Kotlin
 - Multithreading using Kotlin-Coroutines
-- MVVM and Clean Archeticture
+- MVVM and Clean architecture
 - Flow
 - Retrofit and Gson
 - ViewModel
@@ -27,6 +23,6 @@ https://drive.google.com/file/d/1B9h5ftUhssyNbG7pGSvcHLdhc0IlhNch/view?usp=shari
 - Dagger/Hilt
 - Constraint Layout
 
-Feel free to explore my code and I'll be happy if you contact me again for next interview if my code looks good and clean and my skills matches to the job's requirements.
+Feel free to explore my code and I'll be happy if you contact me again for the next interview if my code looks good and clean and my skills match the job's requirements.
 
 Thanks
