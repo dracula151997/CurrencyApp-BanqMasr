@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_nav.xml"
+    app:startDestination="@id/currencyConverterFragment">
+
+    <fragment
+        android:id="@+id/currencyConverterFragment"
+        android:name="com.hassanmohammed.currencyapp_banqmasr.presentation.fragments.CurrencyConverterFragment"
+        android:label="@string/currency_converter_screen">
+        <action
+            android:id="@+id/action_currencyConverterFragment_to_historicalRatesFragment"
+            app:destination="@id/historicalRatesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historicalRatesFragment"
+        android:name="com.hassanmohammed.currencyapp_banqmasr.presentation.fragments.HistoricalRatesFragment"
+        android:label="@string/historical_rates_screen">
+        <argument
+            android:name="fromCurrency"
+            app:argType="string" />
+        <argument
+            android:name="toCurrency"
+            app:argType="string" />
+        <argument
+            android:name="amount"
+            app:argType="string" />
+    </fragment>
+</navigation>
